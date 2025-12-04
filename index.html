@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technova - Tienda tecnológica con productos de alta calidad.">
+    <title>Technova | Tienda Tech</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <img src="https://media.licdn.com/dms/image/v2/C560BAQEk-L1zWQZSYA/company-logo_200_200/company-logo_200_200/0/1631334741578?e=2147483647&v=beta&t=Y594QATJgk5iu0pNfV83_urIBV3o1y-2eU8wmVdL8lk"
+                 alt="Logo Technova" class="logo">
+
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <a href="#carrito" class="carrito-link">
+                        🛒 Carrito <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+
+        <section class="FRONT">
+            <h1>Bienvenido a TechNova</h1>
+            <p>La mejor tecnología al alcance de tu mano</p>
+        </section>
+
+        <!--PRODUCTOS -->
+        <section id="productos">
+            <h2>Productos</h2>
+            <div id="product-container" class="product-grid"></div>
+        </section>
+
+        <!--RESEÑAS -->
+        <section id="reseñas">
+            <h2>Reseñas</h2>
+            <div class="review-grid">
+                <div class="review">⭐⭐⭐ - Me gusto</div>
+                <div class="review">⭐⭐⭐⭐ - Productos de calidad</div>
+                <div class="review">⭐⭐⭐⭐⭐ - Recomiendo la tienda</div>
+            </div>
+        </section>
+
+        <!--CONTACTO -->
+        <section id="contacto" class="contacto-section">
+    <h2>Contacto</h2>
+
+    <form action="https://formspree.io/f/xldqlrwr" method="POST" class="contact-form"> <!--crear el mio -->
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+
+
+        <!--CARRITO -->
+        <section id="carrito">
+            <h2>Tu Carrito</h2>
+            <div id="cart-items"></div>
+            <h3>Total: $<span id="cart-total">0</span></h3>
+        </section>
+
+    </main>
+
+   <footer class="footer">
+    <p>© 2025 TechNova - Todos los derechos reservados</p>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
