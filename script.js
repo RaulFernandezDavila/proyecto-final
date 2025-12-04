@@ -107,13 +107,13 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
 
 document.getElementById("btnPagar").addEventListener("click", function () {
 
-    // Verificar si el carrito está vacío
+    // verificar si el carrito esta vacío
     if (cart.length === 0) {
         alert("Tu carrito está vacío.");
         return;
     }
 
-    // Vaciar carrito
+    // vaciar carrito
     cart = [];
     localStorage.removeItem("cart");
 
