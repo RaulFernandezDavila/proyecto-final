@@ -104,3 +104,30 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
             "Ingrese un email válido.";
     }
 });
+
+document.getElementById("btnPagar").addEventListener("click", function () {
+
+    // Verificar si el carrito está vacío
+    if (cart.length === 0) {
+        alert("Tu carrito está vacío.");
+        return;
+    }
+
+    // Vaciar carrito
+    cart = [];
+    localStorage.removeItem("cart");
+
+    // Actualizar interfaz
+    renderCart();
+
+    // Mostrar mensaje final
+    const mensaje = document.getElementById("mensajeCompra");
+    mensaje.style.display = "block";
+
+    // Ocultar mensaje luego de 3 segundos
+    setTimeout(() => {
+        mensaje.style.display = "none";
+    }, 3000);
+});
+
+

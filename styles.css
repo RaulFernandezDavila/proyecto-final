@@ -129,3 +129,29 @@ body {
 #productos h2 {
     text-align: center;
 }
+
+.btn-pagar {
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-pagar:hover {
+    background-color: #0a58ca;
+}
+
+.mensaje-compra {
+    margin-top: 20px;
+    padding: 15px;
+    background: #d1e7dd;
+    color: #0f5132;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
