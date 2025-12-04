@@ -117,14 +117,11 @@ document.getElementById("btnPagar").addEventListener("click", function () {
     cart = [];
     localStorage.removeItem("cart");
 
-    // Actualizar interfaz
     renderCart();
 
-    // Mostrar mensaje final
     const mensaje = document.getElementById("mensajeCompra");
     mensaje.style.display = "block";
 
-    // Ocultar mensaje luego de 3 segundos
     setTimeout(() => {
         mensaje.style.display = "none";
     }, 3000);
